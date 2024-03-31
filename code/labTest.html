@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="labTest.css">
+</head>
+<body>
+    <section>
+       
+    <form action=""> 
+        <article>
+        <h4>1.Your Contact Details</h4>
+            
+        <input type="text" id="name" name="name" placeholder="Full Name"/>
+            
+        <input type="number" name="meterid" id="meterID" placeholder="Patient Id if exists" required/>
+            
+        <input type="number" id="phoneno" placeholder="Contact Number" required/>
+           
+        <input type="email" name="email" id="email" placeholder="Email Id" required/>
+    
+</article>
+    <article>
+        <h4>2.Address</h4>
+        
+        <input type="text" id="hno" placeholder="H.No." required/>
+
+        <input type="text" id="street" placeholder="Street" required/>
+
+        <input type="text" id="area" placeholder="Area" required/>
+
+        <p >District</p>
+
+        <select name="district" id="district" required>
+            <option value="">choose</option>
+            <option value="Pune">Pune</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nagpur">Nagpur</option>
+        </select>
+    </article>
+
+    <article>
+        <h4>3.Choose the Test Type</h4>
+        <p>Check atleast one box without fail</p>
+        
+        <input type="checkbox" name="cbc" id="issue">
+        <label for="issue1">CBC</label><br>
+
+        <input type="checkbox" name="urine" id="issue">
+        <label for="issue2">Complete Urine</label><br>
+
+        <input type="checkbox" name="lipid" id="issue">
+        <label for="issue3">Lipid Profile</label><br>
+
+        <input type="checkbox" name="TSH" id="issue">
+        <label for="issue4">Thyroid Stimulating Hormone(TSH)</label>
+
+        <input type="checkbox" name="glucoseTest" id="issue">
+        <label for="issue4">Glucose Test</label>
+    </article>
+    
+    <article>
+        <p>Do you want a hard copy of the report also?</p>
+        <input type="radio" name="r1" id="id1" value="true">
+        <label for="id1">Yes</label><br>
+
+        <input type="radio" name="r2" id="id1" value="false">
+        <label for="id1">No</label>
+    </article>
+   
+    <article>
+        <p>Select Your Comfortable Date and Time</p>
+        <input type="datetime-local" name="date" id="date" value="datetime-local" required>
+    </article>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>  
+
+</section>
+</body>
+</html>
